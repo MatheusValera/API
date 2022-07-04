@@ -10,3 +10,10 @@ export class InvalidParamError extends Error {
     this.name = 'InvalidParamError'
   }
 }
+
+export class ServerError extends Error {
+  constructor () {
+    super('Internal Server Error')
+    this.name = 'ServerError'
+  }
+}
