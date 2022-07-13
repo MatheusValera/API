@@ -4,7 +4,7 @@ module.exports = {
     '!<rootDir>/**/src/data/usercases/add-account/db-add-account-protocols.ts',
     '!<rootDir>/**/src/presentation/controllers/signup/signup-protocols.ts',
     '!<rootDir>/**/src/presentation/protocols/index.ts',
-    '!<rootDir>/**/src/main/server.ts'],
+    '!<rootDir>/**/src/main/**'],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
   preset: '@shelf/jest-mongodb',
