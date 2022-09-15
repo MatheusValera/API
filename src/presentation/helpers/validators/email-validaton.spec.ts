@@ -1,4 +1,4 @@
-import { EmaildValidation } from './email-validation'
+import { EmailValidation } from './email-validation'
 import { EmailValidator } from '../../protocols/email-validator'
 import { InvalidParamError } from '../../errors/errors'
 
@@ -11,13 +11,13 @@ const makeEmailValidator = (): EmailValidator => {
   return new EmailValidatorStub()
 }
 interface SutTypes {
-  sut: EmaildValidation
+  sut: EmailValidation
   emailValidatorStub: EmailValidator
 }
 
 const makeSut = (): SutTypes => {
   const emailValidatorStub = makeEmailValidator()
-  const sut = new EmaildValidation('email', emailValidatorStub)
+  const sut = new EmailValidation('email', emailValidatorStub)
   return {
     sut,
     emailValidatorStub
